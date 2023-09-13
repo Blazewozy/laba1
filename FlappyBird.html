@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FlappyBird.css">
+    <script src="FlappyBird.js" defer></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src=""></script>
+</head>
+<body>
+    <div class="description"> <!-- Описание -->
+        <p>Управление: клавиша "ARROW UP" - прыжок вверх</p>
+    </div>
+
+    <div class="wrapper"> <!--Счетчик-->
+        <p id="score">SCORE: </p>
+        <p id="best_score">BEST_SCORE: </p>
+        <p id="rank">Rank: </p>
+    </div>
+    <br>
+    <div class="canvas"> <!--Дисплей-->
+        <canvas id="canvas" width="256" height="512"></canvas>
+    </div>
+    <br>
+    <div class="control"> <!--Пауза--> 
+        <input type="button" onclick="game_pause()" value="PAUSE" 
+        class="btn">
+    </div>
+</body>
+</html>

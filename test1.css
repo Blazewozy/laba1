@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(270deg, #ff23d7, #5750ff);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.divv {
+    color: blanchedalmond;
+    margin-left: 600px;
+    text-align: center;
+    width: 600px;
+    font-size: 60px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+.item1 {
+    text-align: center;
+}
+
+.numbers {
+    text-align: center;
+}
+
+.test {
+    padding-left: 3px;
+}
+
+table, td, tr {
+    border: 3px solid black;
+    color: blanchedalmond;
+    padding: 0px;
+    width: 600px;
+    font-size: 35px;
+    margin-left: 600px;
+}

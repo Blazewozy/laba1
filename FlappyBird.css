@@ -1,0 +1,54 @@
+root {}
+
+body {
+    background: linear-gradient(270deg, #ff23d7, #5750ff);
+    font-family: "Comic Sans MS";
+}
+
+canvas {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+    cursor: pointer;
+}
+
+.canvas {
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.control {
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 30px;
+}
+
+.description {
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+}
