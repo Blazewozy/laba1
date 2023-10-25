@@ -1,41 +1,107 @@
 body {
-    background: linear-gradient(270deg, #ff23d7, #5750ff);
+  background: linear-gradient(270deg, #ff23d7, #5750ff);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .divv {
-    color: blanchedalmond;
-    margin-left: 600px;
-    text-align: center;
-    width: 600px;
-    font-size: 60px;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    background-color: rgba(0, 0, 0, 0.096);
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 60px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, 0.096);
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
 }
 
-.item1 {
-    text-align: center;
+.container {
+  position: relative;
+  width: 300px; /* Задайте розмір контейнера, який вам потрібен */
+      display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.numbers {
-    text-align: center;
+.image-container {
+  width: 100%;
+  overflow: hidden;
 }
 
-.test {
-    padding-left: 3px;
+img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s; /* Додати плавний перехід при зміні трансформації */
 }
 
-ul, td, tr {
-    border: 3px solid black;
-    color: blanchedalmond;
-    padding: 0px;
-    width: 600px;
-    font-size: 35px;
-    margin-left: 600px;
-    text-align: center;
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Фон для тьмяного ефекту */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s; /* Додати плавний перехід при зміні прозорості */
+  background:linear-gradient(-45deg, transparent 32px, #1013ad  0); 
+}
+
+.image-overlay p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.container:hover .image-overlay {
+  opacity: 0;
+  transform: translateX(-100%); /* Зміщуємо текст вліво для відображення зображення */
+}
+
+.container:hover img {
+  transform: translateX(0); /* Зміщуємо зображення вліво, щоб показати повністю */
+}
+
+
+.actor-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Розділити на 2 колонки */
+  gap: 20px; /* Додати відступи між пунктами списку */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Додати фон списку */
+  border: 2px solid #fff;
+}
+
+.actor-list li {
+  list-style-type: none; /* Прибрати маркери списку */
+}
+
+.actor-list a {
+  color: blanchedalmond;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px 0;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: blanchedalmond;
+}
+
+.divmain {
+  text-align: center;
+  margin: 20px 0;
 }

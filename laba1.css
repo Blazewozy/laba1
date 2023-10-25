@@ -1,5 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(270deg, #ff23d7, #5750ff);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 a {
@@ -9,58 +16,96 @@ a {
 
 .divv {
     
-     /*margin-left: 600px;
     text-align: center;
-    width: 600px;
-    font-size: 60px;
-    border-style: solid;
-    border-width: 1px;
-    background-color: rgba(0, 0, 0, 0.096); */
+    font-size: 42px;
+    margin: 20px 0;
 
-    background-color: rgba(0, 0, 0, 0.096);
-    font-size: 50px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    margin-top: 20px;
+
 }
 .divmain {
-    background-color: rgba(0, 0, 0, 0.096);
-    font-size: 50px;
-    text-align: center;
+    font-size: 36px;
+    /*background-color: rgba(0, 0, 0, 0.096);
     border-style: solid;
-    border-width: 1px;
-    margin-left: 700px;
-    margin-right: 750px;
-    margin-top: 20px;
+    border-width: 1px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#signin-button:hover {
+    background-color: #2575c7;
+}
+
+.divmain > div {
+    background: linear-gradient(270deg, #7432be, #3733b9);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .div1:hover {
-    background-color: rgba(0, 0, 0, 0.219);
+    background: rgba(0, 0, 0, 0.219);
     cursor: pointer;
 }
 
 .div2:hover {
-    background-color: rgba(0, 0, 0, 0.219);
+    background: rgba(0, 0, 0, 0.219);
     cursor: pointer;
 }
 
 .div3:hover {
-    background-color: rgba(0, 0, 0, 0.219);
+    background: rgba(0, 0, 0, 0.219);
     cursor: pointer;
 }
 
 .div4:hover {
-    background-color: rgba(0, 0, 0, 0.219);
+    background: rgba(0, 0, 0, 0.219);
     cursor: pointer;
 }
 
 .div5:hover {
-    background-color: rgba(0, 0, 0, 0.219);
+    background: rgba(0, 0, 0, 0.219);
     cursor: pointer;
 }
 
 .div6:hover {
-    background-color: rgba(0, 0, 0, 0.219);
+    background: rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+}
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.096);
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+#signin-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
 }
